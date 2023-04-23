@@ -3,6 +3,7 @@ module.exports = {
 	name: 'arginf',
 	description: 'Return info about the arguments passed.',
 	args: true,
+	guildOnly: true,
 	aliases: ['ai'],
 	execute(message, args) {
 		if (args[0] === 'foo') {

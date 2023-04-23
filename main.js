@@ -16,7 +16,7 @@ client.once('ready', () => {
 	client.user.setActivity('Lumines Supernova', { type: 'PLAYING' });
 });
 
-client.on('message', (message) => {
+client.on('messageCreate', (message) => {
 
 	const args = message.content.slice(PREFIX.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
