@@ -2,7 +2,6 @@ module.exports = {
 	name: 'argtest',
 	description: 'Return info about the arguments passed.',
 	args: true,
-	guildOnly: true,
 	aliases: ['test'],
 	execute(message, args) {
 		if (args[0] === 'foo') {

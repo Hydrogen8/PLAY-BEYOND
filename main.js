@@ -30,9 +30,6 @@ client.on('messageCreate', (message) => {
 		return;
 	}
 
-	if(command.guildOnly && message.channel.type === 'dm') {
-		return message.reply('Error: command not executable outside guilds');}
-
 	if(command.args && !args.length) {
 		return message.channel.send('Error: too many or not enough arguments');}
 
