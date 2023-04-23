@@ -1,4 +1,4 @@
-const { PREFIX, TOKEN } = require('./config.json');
+const { PREFIX, TOKEN } = require('./data/config.json');
 const fs = require('fs');
 const discord = require('discord.js');
 const client = new discord.Client({
