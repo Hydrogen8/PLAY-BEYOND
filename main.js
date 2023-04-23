@@ -1,7 +1,9 @@
 const { PREFIX, TOKEN } = require('./config.json');
 const fs = require('fs');
 const discord = require('discord.js');
-const client = new discord.Client();
+const client = new discord.Client({
+	intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES'],
+});
 client.commands = new discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
