@@ -25,13 +25,16 @@ client.on('messageCreate', (message) => {
 
 	if(!message.content.startsWith(PREFIX) || message.author.bot) return;
 
+	if(!command) {
+		message.channel.send('Error: command not found');
+		return;
+	}
+
 	if(command.guildOnly && message.channel.type === 'dm') {
 		return message.reply('Error: command not executable outside guilds');}
 
 	if(command.args && !args.length) {
 		return message.channel.send('Error: too many or not enough arguments');}
-
-	if(!command) return;
 
 	try {
 		command.execute(message, args);}
