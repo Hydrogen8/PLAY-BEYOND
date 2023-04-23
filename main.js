@@ -40,7 +40,7 @@ client.on('messageCreate', (message) => {
 		command.execute(message, args);}
 		catch(error) {
 		console.error(error);
-		message.channel.send('An unknown error occoured');}
+		message.channel.send(`${error.message}`);}
 });
 
 client.login(TOKEN);
