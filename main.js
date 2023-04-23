@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { PREFIX, TOKEN } = require('./config.json');
 const fs = require('fs');
 const discord = require('discord.js');
