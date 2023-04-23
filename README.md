@@ -42,6 +42,8 @@ After, add the bot to your server. To do this, on the bot dashboard, click "OAut
 
 Last, install Node.js, discord.js, and run the bot. To do this, go to the [Node.js Download page](https://nodejs.org/en/download/) and download one of the installers.
 
+Alternatively, install node.js from your package manager, or for debian follow [these instructions](https://github.com/nodesource/distributions#installation-instructions).
+
 To install the required modules, run:
 
 ```bash
