@@ -1,11 +1,12 @@
 module.exports = {
 	name: 'tag',
-	description: 'Display tags or information about errors.',
+	description: 'Print contents of a tag from the tag database.',
 	args: true,
-	aliases: ['error','err'],
+	aliases: [],
 	execute(message, args) {
+		require('dotenv').config({ path: '../data/tagdb.env'});
 		if(!process.env[args[0]]) {
-			message.channel.send('Error or tag is not in the database.\nIf you know about this error or would like to add a tag with this name, please contribute to the database.');
+			message.channel.send('Tag does not exist');
 		}
 		else {
 			message.channel.send(process.env[args[0]]);
