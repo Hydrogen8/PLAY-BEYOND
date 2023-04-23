@@ -18,12 +18,12 @@ client.once('ready', () => {
 
 client.on('messageCreate', (message) => {
 
-	const args = message.content.slice(PREFIX.length).trim().split(/ +/);
+	const args = message.content.slice(process.env.prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
 	const command = client.commands.get(commandName)
 		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-	if(!message.content.startsWith(PREFIX) || message.author.bot) return;
+	if(!message.content.startsWith(process.env.prefix) || message.author.bot) return;
 
 	if(!command) {
 		message.channel.send('Error: command not found');
@@ -40,4 +40,4 @@ client.on('messageCreate', (message) => {
 		message.channel.send(`${error.message}`);}
 });
 
-client.login(TOKEN);
+client.login(process.env.token);
