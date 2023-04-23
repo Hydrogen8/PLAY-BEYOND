@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../errordb.env'});
+require('dotenv').config({ path: '../data/errordb.env'});
 module.exports = {
 	name: 'error',
 	description: 'Display information about errors.',

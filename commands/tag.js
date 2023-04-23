@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../tagdb.env'});
+require('dotenv').config({ path: '../data/tagdb.env'});
 module.exports = {
 	name: 'tag',
 	description: 'Print contents of a tag from the tag database.',
