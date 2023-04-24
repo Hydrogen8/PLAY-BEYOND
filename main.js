@@ -1,5 +1,5 @@
-require('dotenv').config();
-const { PREFIX, TOKEN } = require('./config.json');
+require('dotenv').config({ path: './data/tags.env'});
+const { PREFIX, TOKEN } = require('./data/config.json');
 const fs = require('fs');
 const discord = require('discord.js');
 const client = new discord.Client({
