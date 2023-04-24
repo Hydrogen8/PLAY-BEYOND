@@ -63,3 +63,7 @@ and then to run the bot:
 ```bash
 node main.js
 ```
+# Credits
+[@JamesIsWack](https://github.com/JamesIsWack/) for Database, development help/ideas, and original bot idea
+
+[@Hydrogen8](https://github.com/Hydrogen8/) for most of the code and ideas
