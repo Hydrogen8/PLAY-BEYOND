@@ -55,7 +55,7 @@ Alternatively, install node.js from your package manager, or for debian follow [
 To install the required modules, run:
 
 ```bash
-npm i discord.js
+npm i discord.js@13.15.1
 ```
 
 and then to run the bot:
