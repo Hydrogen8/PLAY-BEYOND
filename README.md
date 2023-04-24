@@ -9,6 +9,14 @@ Feel free to host this bot yourself for your own server.
 
 If you would like to contribute to this project, please fork this repo and submit a pull request.
 
+- Database TODO:
+  - Np Error Codes 
+     - Status: Unfinished.
+  - Syscon Error Codes
+    - Status: Finished.
+  - Guide resources
+    - Status: Unfinshed.
+
 ## Hosting The Bot
 
 First, create an application. To do this, go to the [Discord Developer Portal](https://discord.com/developers/applications), and click "New Application", as shown:
