@@ -67,3 +67,5 @@ node main.js
 [@JamesIsWack](https://github.com/JamesIsWack/) for Database, development help/ideas, and original bot idea
 
 [@Hydrogen8](https://github.com/Hydrogen8/) for most of the code and ideas
+
+[@NoobKillU](https://github.com/NoobKillU) for [contributing to the database](https://github.com/JamesIsWack/PLAY-BEYOND/commit/3416c61681aa0d31b636eae2e9b1fc56599cf845)
