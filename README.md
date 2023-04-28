@@ -69,3 +69,5 @@ node main.js
 [@Hydrogen8](https://github.com/Hydrogen8/) for most of the code and ideas
 
 [@NoobKillU](https://github.com/NoobKillU) for [contributing to the database](https://github.com/JamesIsWack/PLAY-BEYOND/commit/3416c61681aa0d31b636eae2e9b1fc56599cf845)
+
+Special thanks to the PS3DevWiki, its contributors, and everyone else in the PS3 scene that made this bot possible. Thank you.
