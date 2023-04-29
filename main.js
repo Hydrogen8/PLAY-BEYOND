@@ -24,7 +24,7 @@ client.on('messageCreate', (message) => {
 	const command = client.commands.get(commandName)
 		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-	if(!message.content.startsWith(PREFIX) || message.author.bot) return;
+	if(!message.content.startsWith(PREFIX) || message.content.startsWith(PREFIX+PREFIX) || message.author.bot) return;
 
 	if(!command) {
 		message.channel.send('Error: command not found');

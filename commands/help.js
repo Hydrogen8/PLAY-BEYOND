@@ -1,11 +1,17 @@
-const name = module.exports.name
-
 module.exports = {
 	name: 'help',
-	description: 'Commands help message.',
+	description: 'List all commands (`.help list`), tags (`.help tags`), or info about specific commands.',
 	args: true,
-	aliases: ['h'], 
+	aliases: [],
 	execute(message, args) {
-		message.channel.send(`Resource tags:\n${process.env.tags}`);
-	},
-};
+		if (args[0] != 'list') {
+			try {helpcommand = require(`./${args[0]}.js`);}
+			catch(error) {console.error(error); message.channel.send('Command not found'); return;}
+			message.channel.send(helpcommand.description + ' Aliases: ' + helpcommand.aliases);}
+    else if (args[0] === 'tags') {
+      message.channel.send(`Resource tags:\n${process.env.tags}`);}
+		else if (args[0] === 'list' || args[0] === '') {
+			message.channel.send('Commands: \n    `argtest` (aliases: `test`)\n    `help`\n    `tag` (aliases: `error`, `err`)');
+		}
+	}
+}

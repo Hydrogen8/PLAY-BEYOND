@@ -5,13 +5,23 @@ Assistance bot for the Brewstation discord server.
 
 Feel free to host this bot yourself for your own server.
 
+## Credits
+
+[@JamesIsWack](https://github.com/JamesIsWack/) for Database, development help/ideas, and original bot idea
+
+[@Hydrogen8](https://github.com/Hydrogen8/) for most of the code and ideas
+
+[@NoobKillU](https://github.com/NoobKillU) for [contributing to the database](https://github.com/JamesIsWack/PLAY-BEYOND/commit/3416c61681aa0d31b636eae2e9b1fc56599cf845)
+
+Special thanks to the PS3DevWiki, its contributors, and everyone else in the PS3 scene that made this bot possible. Thank you.
+
 ## Contributing
 
 If you would like to contribute to this project, please fork this repo and submit a pull request.
 
 - Database TODO:
-  - Np Error Codes 
-     - Status: Unfinished.
+  - Np Error Codes
+    - Status: Unfinished.
   - Syscon Error Codes
     - Status: Finished.
   - Guide resources
@@ -55,7 +65,7 @@ Alternatively, install node.js from your package manager, or for debian follow [
 To install the required modules, run:
 
 ```bash
-npm i discord.js@13.15.1 dotenv
+npm i
 ```
 
 and then to run the bot:
@@ -63,11 +73,3 @@ and then to run the bot:
 ```bash
 node main.js
 ```
-# Credits
-[@JamesIsWack](https://github.com/JamesIsWack/) for Database, development help/ideas, and original bot idea
-
-[@Hydrogen8](https://github.com/Hydrogen8/) for most of the code and ideas
-
-[@NoobKillU](https://github.com/NoobKillU) for [contributing to the database](https://github.com/JamesIsWack/PLAY-BEYOND/commit/3416c61681aa0d31b636eae2e9b1fc56599cf845)
-
-Special thanks to the PS3DevWiki, its contributors, and everyone else in the PS3 scene that made this bot possible. Thank you.
