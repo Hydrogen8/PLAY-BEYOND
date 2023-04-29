@@ -4,7 +4,7 @@ module.exports = {
 	args: true,
 	aliases: [],
 	execute(message, args) {
-		if (args[0] != 'list') {
+		if (args[0] != 'list' || args[0] != 'tags') {
 			try {helpcommand = require(`./${args[0]}.js`);}
 			catch(error) {console.error(error); message.channel.send('Command not found'); return;}
 			message.channel.send(helpcommand.description + ' Aliases: ' + helpcommand.aliases);}
