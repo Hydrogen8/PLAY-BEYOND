@@ -1,3 +1,8 @@
+# Notice
+
+As of whenever I left discord and officially as of 2024/03/23, this project is no longer maintained.
+
+If you would like to become the maintainer of this bot, please message [hydrogen@h2.gay](xmpp:hydrogen@h2.gay), [@hydrogen:h2.gay](https://matrix.to/#/@hydrogen:h2.gay) or mail [hydrogen@envs.net](mailto:hydrogen@envs.net).
 
 # PLAY BEYOND
 
